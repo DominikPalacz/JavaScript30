@@ -39,12 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /** Creating a audio */
   const createAudio = array => {
-    console.warn(array);
     array.forEach(e => {
       const audio = document.createElement("audio");
       audio.dataset.key = e.key;
       audio.src = `sounds/${e.text}.wav`;
-      console.log(audio);
+
       document.body.appendChild(audio);
     });
   };
