@@ -39,12 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /** Creating a audio */
   const createAudio = array => {
-    console.warn(array);
     array.forEach(e => {
       const audio = document.createElement("audio");
       audio.dataset.key = e.key;
-      audio.src = `sounds/${e.text}.wav`;
-      console.log(audio);
+      //! audio.src = `sounds/${e.text}.wav`;
+      audio.src = `../01 - JavaScript Drum Kit/sounds/${e.text}.wav`;
+
       document.body.appendChild(audio);
     });
   };
@@ -69,4 +69,5 @@ document.addEventListener("DOMContentLoaded", () => {
   const keys = document.querySelectorAll(".key");
   keys.forEach(key => key.addEventListener("transitionend", removeTransition));
   window.addEventListener("keydown", playSound);
+
 });

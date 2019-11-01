@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /** Creating clock */
   const createClock = () => {
     const clockFragment = document.createDocumentFragment();
+    const clockSection = document.createElement("div");
     const clock = document.createElement("div");
     const clockFace = clock.cloneNode(true);
     const hands = ["hour", "min", "second"];
@@ -14,11 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
       clockFace.appendChild(hand);
     });
 
+    clockSection.classList.add("clock-section");
     clock.classList.add("clock");
     clockFace.classList.add("clock-face");
 
+    clockSection.appendChild(clock);
     clock.appendChild(clockFace);
-    clockFragment.appendChild(clock);
+    clockFragment.appendChild(clockSection);
 
     document.body.appendChild(clockFragment);
   };
