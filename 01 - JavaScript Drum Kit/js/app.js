@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const audio = document.createElement("audio");
       audio.dataset.key = e.key;
       //! audio.src = `sounds/${e.text}.wav`;
-      audio.src = `../01 - JavaScript Drum Kit/sounds/${e.text}.wav`;
+      audio.src = `./01 - JavaScript Drum Kit/sounds/${e.text}.wav`;
 
       document.body.appendChild(audio);
     });
