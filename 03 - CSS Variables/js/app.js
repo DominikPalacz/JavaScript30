@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /** Creating logic */
   const inputs = document.querySelectorAll(".controls input");
-  console.log("inputs :", inputs);
 
   function handleUpdate() {
     const suffix = this.dataset.sizing || "";
