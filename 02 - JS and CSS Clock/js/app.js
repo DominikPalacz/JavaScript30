@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const section = document.createElement("section");
+  section.classList.add("section-2");
   /** Creating clock */
   const createClock = () => {
     const clockFragment = document.createDocumentFragment();
@@ -23,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
     clock.appendChild(clockFace);
     clockFragment.appendChild(clockSection);
 
-    document.body.appendChild(clockFragment);
+    section.appendChild(clockFragment);
+    document.body.appendChild(section);
   };
 
   /** Initialize app */

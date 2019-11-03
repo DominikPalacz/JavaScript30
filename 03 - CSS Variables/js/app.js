@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
    */
   const fragment = document.createDocumentFragment();
   const section = document.createElement("section");
+  section.classList.add("section-3");
   let imgSize =
     window.innerWidth < window.innerHeight
       ? window.innerWidth - 60
@@ -57,9 +58,10 @@ document.addEventListener("DOMContentLoaded", () => {
       id="brightness"
       type="range"
       name="brightness"
-      min= 0"
+      min= 0.1"
       max="10"
       value="1"
+      step="0.1"
       />
 
     <label for="base">Base Color</label>

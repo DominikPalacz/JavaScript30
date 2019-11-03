@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const section = document.createElement("section");
+  section.classList.add("section-1");
   /** Data */
   const keyArray = [
     { key: 65, label: "A", text: "clap" },
@@ -35,7 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return keys;
   };
 
-  document.body.appendChild(createKeys(keyArray));
+  section.appendChild(createKeys(keyArray));
+  document.body.appendChild(section);
 
   /** Creating a audio */
   const createAudio = array => {
@@ -45,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //! audio.src = `sounds/${e.text}.wav`;
       audio.src = `./01 - JavaScript Drum Kit/sounds/${e.text}.wav`;
 
-      document.body.appendChild(audio);
+      section.appendChild(audio);
     });
   };
 
@@ -69,5 +72,4 @@ document.addEventListener("DOMContentLoaded", () => {
   const keys = document.querySelectorAll(".key");
   keys.forEach(key => key.addEventListener("transitionend", removeTransition));
   window.addEventListener("keydown", playSound);
-
 });

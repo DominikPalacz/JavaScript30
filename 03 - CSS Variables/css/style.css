@@ -5,22 +5,27 @@
   --brightness: 1;
 }
 
-img {
+.section-3 img {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
   filter: blur(var(--blur)) brightness(var(--brightness));
 }
 
-.hl {
+.section-3 .hl {
   color: var(--base);
+}
+
+.section-3 h2 {
+  margin: 0;
+  padding: 30px;
 }
 
 /*
   misc styles, nothing to do with CSS variables
 */
 
-section {
+.section-3 {
   text-align: center;
   background: #193549;
   color: white;
@@ -31,10 +36,10 @@ section {
   height: 100%;
 }
 
-.controls {
+.section-3 .controls {
   margin-bottom: 50px;
 }
 
-input {
+.section-3 input {
   width: 100px;
 }

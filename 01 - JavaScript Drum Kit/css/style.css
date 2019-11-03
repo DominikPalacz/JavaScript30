@@ -1,10 +1,10 @@
-* {
+.section-1 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.keys {
+.section-1 .keys {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
   height: 100%;
 }
 
-.key {
+.section-1 .key {
   border: 0.4rem solid black;
   border-radius: 0.5rem;
   margin: 1rem;
@@ -31,18 +31,18 @@
   text-shadow: 0 0 0.5rem black;
 }
 
-.playing {
+.section-1 .playing {
   transform: scale(1.1);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
 }
 
-kbd {
+.section-1 kbd {
   display: block;
   font-size: 4rem;
 }
 
-.sound {
+.section-1 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;

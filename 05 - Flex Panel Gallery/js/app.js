@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const fragment = document.createElement("section");
+  fragment.classList.add("section-5");
   fragment.innerHTML = `
   <div class="panels">
   <div class="panel panel1">
