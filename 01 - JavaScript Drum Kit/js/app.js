@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     key.classList.add("playing");
     sound.currentTime = 0;
-    sound.play();
+    if (window.scrollY <= 2000) sound.play();
   };
 
   function removeTransition(e) {
