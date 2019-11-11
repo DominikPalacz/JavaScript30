@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const handleFullScreen = () => {
-    player.requestFullscreen();
+    video.requestFullscreen();
   };
 
   /**
