@@ -1,0 +1,10 @@
+.section-12 {
+  height: 100%;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.section-12 strong {
+  color: transparent;
+  font-size: 32px;
+}
