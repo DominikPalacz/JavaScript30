@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fragment.appendChild(section);
   document.body.appendChild(fragment);
 
-  function debounce(func, wait = 20, immediate = true) {
+  function debounce(func, wait = 10, immediate = true) {
     var timeout;
     return function() {
       var context = this,
