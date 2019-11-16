@@ -18,10 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const password = "magic";
 
   window.addEventListener("keyup", ({ key }) => {
-    console.log("e :", key);
     pressed.push(key);
     pressed.splice(-password.length - 1, pressed.length - password.length);
-    console.log(pressed);
+    
     if (pressed.join("").includes(password)) cornify_add();
   });
 });
