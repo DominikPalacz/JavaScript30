@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </div>`;
 
-  document.body.appendChild(fragment);
+  document.querySelector(".scroll-container").appendChild(fragment);
 
   const panels = document.querySelectorAll(".panel");
 
