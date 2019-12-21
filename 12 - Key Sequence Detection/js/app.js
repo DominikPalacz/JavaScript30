@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <h2>Select this text with the mouse and => <strong>Write the word... magic</strong></h2>
   </div>`;
   fragment.appendChild(section);
-  document.body.appendChild(fragment);
+ document.querySelector(".scroll-container").appendChild(fragment);
 
   const pressed = [];
   const password = "magic";

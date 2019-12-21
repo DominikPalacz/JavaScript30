@@ -25,3 +25,31 @@
 * * * * * * * * * {
   background-color: rgba(0, 0, 255, 0.2);
 } */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: aliceblue;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #193549;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #193599;
+}

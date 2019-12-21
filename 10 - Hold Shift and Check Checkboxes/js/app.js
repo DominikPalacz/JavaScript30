@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </div>`;
   fragment.appendChild(section);
-  document.body.appendChild(fragment);
+ document.querySelector(".scroll-container").appendChild(fragment);
 
   const allCheckBoxes = document.querySelectorAll(
     '.inbox input[type="checkbox"]'

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   section.innerHTML = `<ul id="bands"></ul>`;
   fragment.appendChild(section);
-  document.body.appendChild(fragment);
+ document.querySelector(".scroll-container").appendChild(fragment);
 
   const bands = [
     "The Plot in You",

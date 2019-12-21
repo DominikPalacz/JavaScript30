@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   section.innerHTML = `<p class="click-me">click me 👁‍🗨 ×BREAK×DOWN×</p>`;
 
   fragment.appendChild(section);
-  document.body.appendChild(fragment);
+ document.querySelector(".scroll-container").appendChild(fragment);
 
   const dogs = [{ name: "Snickers", age: 2 }, { name: "hugo", age: 8 }];
 

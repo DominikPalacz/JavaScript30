@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setSum
   );
 
-  document.body.appendChild(p);
+  document.querySelector(".scroll-container").appendChild(p);
   console.log(
     "%c ",
     "font-size: 1000px; background: url(https://i.cloudup.com/Zqeq2GhGjt-3000x3000.jpeg) no-repeat;"

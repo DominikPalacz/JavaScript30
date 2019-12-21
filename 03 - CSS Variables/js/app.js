@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // h2.innerText = "Update CSS Variables with";
   // h2.appendChild(span);
   // console.log("fragment :", section);
-  // document.body.appendChild(fragment);
+  //document.querySelector(".scroll-container").appendChild(fragment);
   // !
   // !  I am a lazy programmer... innerHTML
   //!
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <img src="https://source.unsplash.com/${imgSize}x${imgSize / 2}" />`;
   fragment.appendChild(section);
-  document.body.appendChild(fragment);
+  document.querySelector(".scroll-container").appendChild(fragment);
 
   /** Creating logic */
   const inputs = document.querySelectorAll(".controls input");

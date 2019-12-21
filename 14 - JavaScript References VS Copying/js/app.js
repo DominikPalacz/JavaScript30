@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const section = document.createElement("section");
   section.classList.add("section-14");
 
-  section.innerHTML = `<div class="section"></div>`;
+  section.innerHTML = `<div class="section">console.log master</div>`;
   fragment.appendChild(section);
   document.body.appendChild(fragment);
 

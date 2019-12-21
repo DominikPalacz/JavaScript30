@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   section.innerHTML = `<canvas id="draw" width="320" height="320"></canvas>`;
 
   fragment.appendChild(section);
-  document.body.appendChild(fragment);
+ document.querySelector(".scroll-container").appendChild(fragment);
 
   const canvas = document.getElementById("draw");
   const context = canvas.getContext("2d");

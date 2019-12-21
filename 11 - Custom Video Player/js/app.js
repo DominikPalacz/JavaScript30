@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </div>`;
   fragment.appendChild(section);
-  document.body.appendChild(fragment);
+ document.querySelector(".scroll-container").appendChild(fragment);
 
   /**
    *  Get elements

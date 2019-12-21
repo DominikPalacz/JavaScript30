@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <h1 contenteditable>🔥WOAH!</h1>
   </div>`;
   fragment.appendChild(section);
-  document.body.appendChild(fragment);
+ document.querySelector(".scroll-container").appendChild(fragment);
 
   const hero = document.querySelector(".hero");
   const text = hero.querySelector("h1");

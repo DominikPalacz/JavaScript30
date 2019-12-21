@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </ul>
   `;
   fragment.appendChild(section);
-  document.body.appendChild(fragment);
+ document.querySelector(".scroll-container").appendChild(fragment);
 
   const timeNodes = [...document.querySelectorAll("[data-time]")];
   const secondInHour = 3600;

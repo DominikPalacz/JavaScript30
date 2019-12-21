@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clockFragment.appendChild(clockSection);
 
     section.appendChild(clockFragment);
-    document.body.appendChild(section);
+    document.querySelector(".scroll-container").appendChild(section);
   };
 
   /** Initialize app */
